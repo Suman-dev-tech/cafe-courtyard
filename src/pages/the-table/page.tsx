@@ -46,8 +46,7 @@ export default function TheTablePage() {
                 <span className="italic font-normal">A Story</span>
               </h1>
               <p className="font-body text-background-200 text-base md:text-lg max-w-xl leading-relaxed">
-                Explore our continental offerings through the lens of their
-                origins, ingredients, and the conversations they inspire.
+                Explore our continental offerings through the lens of their origins, the people who created them, how it had travelled around the world and the conversations they inspire.
               </p>
             </div>
           </div>

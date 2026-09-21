@@ -8,7 +8,7 @@ export const dishes = [
     image:
       "https://readdy.ai/api/search-image?query=Chicken%20ala%20kiev%20on%20elegant%20white%20plate%20with%20herb%20butter%20garnish%2C%20rosemary%20sprigs%2C%20warm%20amber%20lighting%2C%20editorial%20food%20photography%20style%2C%20rustic%20linen%20napkin%2C%20dark%20wooden%20table%20background%2C%20luxurious%20presentation&width=600&height=700&seq=dish-ala-kiev&orientation=portrait",
     story:
-      "Born in the imperial kitchens of 19th-century France, refined through Russian aristocracy, and reborn at Cafe Courtyard. Our Chicken Ala Kiev is more than a dish — it is edible history.",
+      "Do you remember your first cut, the occasion, or the person across the table?",
     origin: "France & Russia",
     ingredients: [
       "Free-range chicken breast",
@@ -32,7 +32,7 @@ export const dishes = [
     image:
       "https://readdy.ai/api/search-image?query=Continental%20brunch%20platter%20with%20eggs%20benedict%2C%20smoked%20salmon%2C%20avocado%20toast%2C%20fresh%20berries%2C%20elegant%20white%20ceramic%20plate%2C%20warm%20morning%20light%2C%20editorial%20food%20photography%20style%2C%20fresh%20greens%20garnish&width=600&height=700&seq=dish-brunch&orientation=portrait",
     story:
-      "Sunday brunch is a continental institution. From Parisian sidewalk cafés to Viennese coffeehouses, the leisurely late-morning meal has always been about more than food — it is about time, and how we choose to spend it.",
+      "A weekend ritual, a travel discovery, or a shared morning that became a favourite memory?",
     origin: "Continental Europe",
     ingredients: [
       "Farm-fresh eggs",
@@ -56,7 +56,7 @@ export const dishes = [
     image:
       "https://readdy.ai/api/search-image?query=Handmade%20pappardelle%20pasta%20with%20rich%20slow-braised%20lamb%20ragu%2C%20wide%20pasta%20ribbons%2C%20parmesan%20shavings%2C%20fresh%20basil%20garnish%2C%20warm%20rustic%20bowl%2C%20editorial%20food%20photography%20style%2C%20cozy%20Italian%20atmosphere&width=600&height=700&seq=dish-pappardelle&orientation=portrait",
     story:
-      "Inspired by a summer in Tuscany, our handmade pasta program brings the soul of Italian countryside cooking to Kolkata. Each ribbon of pappardelle is cut by hand, each ragu simmers for six hours.",
+      "Which unexpected pairing first surprised you, and whose table introduced you to it?",
     origin: "Tuscany, Italy",
     ingredients: [
       "Hand-rolled egg pasta",
@@ -80,7 +80,7 @@ export const dishes = [
     image:
       "https://readdy.ai/api/search-image?query=Elegant%20grilled%20seafood%20platter%20with%20prawns%2C%20sea%20bass%2C%20scallops%2C%20lemon%20wedges%2C%20herb%20butter%20drizzle%2C%20white%20linen%20table%20setting%2C%20editorial%20food%20photography%20style%2C%20coastal%20elegant%20atmosphere%2C%20warm%20natural%20lighting&width=600&height=700&seq=dish-seafood&orientation=portrait",
     story:
-      "The seafood traditions of Normandy — butter, herbs, and the freshest catch — have always been about celebrating what the sea provides. Our grill brings that reverence to Kolkata, with fish sourced daily from local markets.",
+      "What makes a meal memorable for you - the flavours, the setting, or the company?",
     origin: "Normandy, France",
     ingredients: [
       "Fresh sea bass",
