@@ -160,12 +160,12 @@ export default function CommunityPage() {
              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
   {[
     {
-      name: "Handmade Pappardelle",
-      url: "https://cafecourtyard.in/dish/handmade-pappardelle",
+      name: "Bacon Wrapped Prawns",
+      url: "https://cafecourtyard.in/dish/bacon-wrapped-prawns",
     },
     {
-      name: "Continental Brunch Platter",
-      url: "https://cafecourtyard.in/dish/continental-brunch-platter",
+      name: "English Breakfast",
+      url: "https://cafecourtyard.in/dish/english-breakfast",
     },
     {
       name: "Chicken Ala Kiev",
