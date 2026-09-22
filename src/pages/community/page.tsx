@@ -157,18 +157,30 @@ export default function CommunityPage() {
                 Which continental dish should we feature next? Your vote shapes
                 the next story on Plate Stories.
               </p>
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-                {["Chicken Ala Kiev", "Beef Stroganoff", "Ratatouille"].map(
-                  (option) => (
-                    <button
-                      key={option}
-                      className="w-full sm:w-auto font-body text-sm bg-background-50/10 text-background-200 border border-background-400/20 px-6 py-3 rounded-full hover:bg-background-50 hover:text-primary-900 transition-all duration-300 whitespace-nowrap"
-                    >
-                      {option}
-                    </button>
-                  )
-                )}
-              </div>
+             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
+  {[
+    {
+      name: "Handmade Pappardelle",
+      url: "https://cafecourtyard.in/dish/handmade-pappardelle",
+    },
+    {
+      name: "Continental Brunch Platter",
+      url: "https://cafecourtyard.in/dish/continental-brunch-platter",
+    },
+    {
+      name: "Chicken Ala Kiev",
+      url: "https://cafecourtyard.in/dish/chicken-ala-kiev",
+    },
+  ].map((option) => (
+    <a
+      key={option.name}
+      href={option.url}
+      className="w-full sm:w-auto font-body text-sm bg-background-50/10 text-background-200 border border-background-400/20 px-6 py-3 rounded-full hover:bg-background-50 hover:text-primary-900 transition-all duration-300 whitespace-nowrap text-center"
+    >
+      {option.name}
+    </a>
+  ))}
+</div>
             </div>
           </div>
         </section>
