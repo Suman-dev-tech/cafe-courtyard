@@ -592,7 +592,7 @@ function JoinConversationSection() {
               <span className="italic font-normal">Conversation</span>
             </h2>
             <p className="font-body text-foreground-600 text-base leading-relaxed mb-8 max-w-md">
-              Weekly stories from Flavor Files, delivered to your inbox. No spam, only stories worth savoring — and a few surprises from the Courtyard.
+              Read a story, add your perspective, or send us a memory of your own. Wherever you are in the world, there is room for your voice here. 
             </p>
 
             <form
