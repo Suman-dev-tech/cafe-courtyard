@@ -73,8 +73,8 @@ export const dishes = [
   },
   {
     id: "4",
-    slug: "The Courtyard Steak",
-    name: "the-courtyard-steak",
+    slug: "the-courtyard-steak",
+    name: "The Courtyard Steak",
     category: "Community Favourites",
     tagline: "The coast of Normandy, reimagined in Kolkata",
     image:

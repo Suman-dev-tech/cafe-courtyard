@@ -4,6 +4,7 @@ import Footer from "@/components/feature/Footer";
 import { communityDiscussions, featuredConversation } from "@/mocks/community";
 import { BougainvilleaCorner, PetalScatter } from "@/components/base/BougainvilleaDecor";
 import { cafeInfo } from "@/mocks/cafeInfo";
+import { useState } from "react";
 
 export default function CommunityPage() {
   return (
@@ -144,46 +145,57 @@ export default function CommunityPage() {
         </section>
 
         {/* Food Poll */}
-        <section className="px-5 md:px-10 lg:px-14 pb-20 md:pb-28">
-          <div className="max-w-7xl mx-auto">
-            <div className="bg-primary-600 rounded-2xl p-8 md:p-12 text-center">
-              <div className="w-12 h-12 rounded-full bg-secondary-500/20 flex items-center justify-center mx-auto mb-6">
-                <i className="ri-survey-line text-secondary-300 text-xl" />
-              </div>
-              <h2 className="font-display text-2xl md:text-3xl text-background-50 mb-4">
-                Food Poll of the Month
-              </h2>
-              <p className="font-body text-background-300 text-sm md:text-base max-w-md mx-auto mb-8 leading-relaxed">
-                Which continental dish should we feature next? Your vote shapes
-                the next story on Plate Stories.
-              </p>
-             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-  {[
-    {
-      name: "Bacon Wrapped Prawns",
-      url: "https://cafecourtyard.in/dish/bacon-wrapped-prawns",
-    },
-    {
-      name: "English Breakfast",
-      url: "https://cafecourtyard.in/dish/english-breakfast",
-    },
-    {
-      name: "Chicken Ala Kiev",
-      url: "https://cafecourtyard.in/dish/chicken-ala-kiev",
-    },
-  ].map((option) => (
-    <a
-      key={option.name}
-      href={option.url}
-      className="w-full sm:w-auto font-body text-sm bg-background-50/10 text-background-200 border border-background-400/20 px-6 py-3 rounded-full hover:bg-background-50 hover:text-primary-900 transition-all duration-300 whitespace-nowrap text-center"
-    >
-      {option.name}
-    </a>
-  ))}
-</div>
-            </div>
-          </div>
-        </section>
+ <section className="px-5 md:px-10 lg:px-14 pb-20 md:pb-28">
+  <div className="max-w-7xl mx-auto">
+    <div className="bg-primary-600 rounded-2xl p-8 md:p-12 text-center">
+      <div className="w-12 h-12 rounded-full bg-secondary-500/20 flex items-center justify-center mx-auto mb-6">
+        <i className="ri-survey-line text-secondary-300 text-xl" />
+      </div>
+
+      <h2 className="font-display text-2xl md:text-3xl text-background-50 mb-4">
+        Food Poll of the Month
+      </h2>
+
+      <p className="font-body text-background-300 text-sm md:text-base max-w-md mx-auto mb-8 leading-relaxed">
+        Which continental dish should we feature next? Your vote shapes
+        the next story on Plate Stories.
+      </p>
+
+      <div className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-2xl mx-auto">
+        {[
+          {
+            name: "Bacon Wrapped Prawns",
+            votes: 24,
+          },
+          {
+            name: "English Breakfast",
+            votes: 18,
+          },
+          {
+            name: "Chicken Ala Kiev",
+            votes: 12,
+          },
+        ].map((option) => {
+          const [selectedFood, setSelectedFood] = useState(null);
+
+          return (
+            <button
+              key={option.name}
+              onClick={() => setSelectedFood(option.name)}
+              className={`w-full sm:w-auto font-body text-sm px-6 py-3 rounded-full border transition-all duration-300 text-center ${
+                selectedFood === option.name
+                  ? "bg-secondary-400 text-primary-900 border-secondary-400"
+                  : "bg-background-50/10 text-background-200 border-background-400/20 hover:bg-background-50 hover:text-primary-900"
+              }`}
+            >
+              {option.name}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  </div>
+</section>
       </main>
       <Footer />
     </>
